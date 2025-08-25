@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="black">
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/serviceWorkerRegistration.ts"></script>
+    <script type="module" src="/src/main.tsx"></script>
+<!--    <button id="notify-btn">Enable Notifications</button>-->
+<!--  <script>-->
+<!--    // Check if Safari-->
+<!--    if ('safari' in window && 'pushNotification' in window.safari) {-->
+<!--        // Check permission first-->
+<!--        const permissionData = window.safari.pushNotification.permission('web.yourdomain.com');-->
+
+<!--        if (permissionData.permission === 'default') {-->
+<!--            // Request permission-->
+<!--            window.safari.pushNotification.requestPermission(-->
+<!--                'https://yourdomain.com', // Your web service URL-->
+<!--                'web.yourdomain.com',      // Your Website Push ID-->
+<!--                {},                       // Optional data-->
+<!--                function(permissionData) {-->
+<!--                    // Callback with permission data-->
+<!--                    console.log(permissionData);-->
+<!--                }-->
+<!--            );-->
+<!--        } else if (permissionData.permission === 'denied') {-->
+<!--            console.log('User denied permission');-->
+<!--        } else if (permissionData.permission === 'granted') {-->
+<!--            console.log('User granted permission');-->
+<!--        }-->
+<!--    }-->
+<!--    localStorage.setItem('posrez', 'true');-->
+<!--    document.getElementById('notify-btn').addEventListener('click', async () => {-->
+<!--      if ('Notification' in window && 'serviceWorker' in navigator) {-->
+<!--        const permission = await Notification.requestPermission();-->
+<!--        alert(`Permission: ${permission}`);-->
+<!--      } else {-->
+<!--        alert("Web Push not supported!");-->
+<!--      }-->
+<!--    });-->
+<!--  </script>-->
+  </body>
+</html>
